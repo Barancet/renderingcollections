@@ -1,7 +1,15 @@
 import React from "react";
 
-const Note = ({ note }) => {
-  return <li>{note.content}</li>;
+const Note = ({ note, toggleImportance, deleteNote }) => {
+
+  const importantLabel = note.important ? 'Set Not important': 'Make important'
+  return (
+  <li>
+    {note.content}
+    <button onClick={toggleImportance}>{importantLabel}</button>
+    <button onClick={deleteNote}>Delete</button>
+  </li>
+    )
 };
 
 export default Note;
