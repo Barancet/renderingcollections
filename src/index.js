@@ -4,13 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const notes = []
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
-ReactDOM
-.createRoot(document.getElementById('root'))
-.render(<App notes={notes} />)
-
-//old way 
+//old way
 /* const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

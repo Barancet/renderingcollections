@@ -5,7 +5,6 @@ const Notification = ({ message }) => {
 
   return (
     <div className={message.includes("STATUS") ? "good" : "error"}>
-      {" "}
       {message}
     </div>
   );
